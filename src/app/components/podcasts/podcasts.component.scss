@@ -1,0 +1,115 @@
+ //$main_purple_color: #891f8e;
+
+ @import '~src/assets/scss/variables';
+
+ .postcast_main_container {
+     position: relative;
+     margin-top: 40px;
+
+     .shared_bg {
+         background-color: #fff;
+         padding: 40px;
+         box-shadow: 3px 5px 6px 0px #c3c0c0;
+     }
+
+
+     .container {
+         position: relative;
+
+         /*Start of dynamic_numbers */
+         .dynamic_numbers {
+             position: relative;
+             background-color: #444;
+             // width: 10%;
+             width: 50px;
+             height: 50px;
+             border-radius: 50%;
+             background: url(/assets/images/svg/circle.svg);
+             background-size: 100% 100%;
+             display: block;
+             background-repeat: no-repeat;
+             background-position: center center;
+             object-fit: cover;
+             background-size: cover;
+             margin: 6px 10px auto 161px;
+
+             h3 {
+                 line-height: 50px;
+                 text-align: center;
+                 font-size: 25px;
+                 font-weight: bold;
+                 color: #fff;
+             }
+
+         }
+
+         /*End of dynamic_numbers */
+
+
+         /*Start of of image style */
+         .alexa-img {
+             position: relative;
+
+             img {
+                 width: 120px;
+                 height: 120px;
+                 display: block;
+                 margin-left: -70px;
+             }
+         }
+
+         /*End of of image style */
+
+         /*Start of authors-container style*/
+         .authors-container {
+             position: relative;
+
+             h3 {
+                 font-family: SpaceMono-Bold;
+             }
+
+             p {
+                 position: relative;
+                 color: $main_purple_color;
+
+
+                 span,
+                 span {
+                     font-weight: normal;
+                     font-family: SpaceMono-Regular;
+
+                 }
+             }
+
+             /*End of authors-container style*/
+         }
+
+         /*Start of right_container_text style*/
+         .right_container_text {
+             position: relative;
+
+             p {
+                 font-family: SpaceMono-Regular;
+             }
+         }
+
+         /*End of right_container_text style*/
+
+
+     }
+
+     //End of postcast_main_container >container div
+
+
+
+
+
+
+
+
+
+
+
+
+
+ }
