@@ -1,5 +1,5 @@
+import { async } from '@angular/core/testing';
 import { PodcastService } from './../../services/podcast.service';
-// import { Student } from './../../student';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,24 +8,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./podcasts.component.scss']
 })
 export class PodcastsComponent implements OnInit {
-  title: string = 'Podcats';
-  public podcasts: any[];
-
+ 
+  public podcasts_data: any;
+  podcast_id: number;
+  podcast_name: string;
+  pod_parent_id: number;
   constructor(private podCast: PodcastService) {
     podCast.getPodCastList().subscribe(
       (res) => {
         console.log(res);
-      
-        this.podcasts = res;
+        this.podcast_id = res.id
+        this.podcast_name = res.name
+        this.pod_parent_id = res.parent_id
+        this.podcasts_data =  res.podcasts;
       },
       (err) => {
-        console.log("error", err);
+        console.log("oops, error has occured: ", err);
       }
     )
    }
  
   ngOnInit(): void {
-   
+   console.log("DATA", this.data)
   }
 
 }

@@ -18,3 +18,25 @@
 
 
 }
+
+@media(max-width:678px) {
+    .potcasts_header {
+        display: block;
+
+        .container-fluid {
+            position: relative;
+            display: block;
+
+            img {
+                // width: 1804px;
+                width: 100%;
+                // height: 162px;
+
+                height: 200px;
+                object-fit: cover;
+                object-position: 32% 100%;
+
+            }
+        }
+    }
+}
