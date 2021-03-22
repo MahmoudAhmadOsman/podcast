@@ -1,185 +1,183 @@
+@import '~src/assets/scss/variables';
+
+.postcast_main_container {
+  position: relative;
+  margin-top: 40px;
+  display: block;
 
 
- @import '~src/assets/scss/variables';
-
- .postcast_main_container {
-   position: relative;
-   margin-top: 40px;
-   display: block;
-
-
-   .shared_bg {
-     background-color: #fff;
-     padding: 40px;
-     box-shadow: 3px 1px 0px 0px #c3c0c0;
-     -webkit-box-shadow: 3px 1px 0px 0px #c3c0c0;
-     -moz-box-shadow: 3px 1px 0px 0px #c3c0c0;
-     -ms-box-shadow: 3px 1px 0px 0px #c3c0c0;
-     -o-box-shadow: 3px 1px 0px 0px #c3c0c0;
-   }
+  .shared_bg {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 5px 7px 6px #b6444329;
+    -webkit-box-shadow: 5px 7px 6px #b6444329;
+    -moz-box-shadow: 5px 7px 6px #b6444329;
+    -ms-box-shadow: 5px 7px 6px #b6444329;
+    -o-box-shadow: 5px 7px 6px #b6444329;
+  }
 
 
-   .container {
-     position: relative;
+  .container {
+    position: relative;
 
-     .row_mb {
-       margin-bottom: 40px;
-     }
+    .row_mb {
+      margin-bottom: 40px;
+    }
 
-     /*Start of dynamic_numbers */
-     .dynamic_numbers {
-       position: relative;
-       background-color: #444;
-       // width: 10%;
-       width: 50px;
-       height: 50px;
-       border-radius: 50%;
-       background: url(/assets/images/svg/circle.svg);
-       background-size: 100% 100%;
-       display: block;
-       background-repeat: no-repeat;
-       background-position: center center;
-       object-fit: cover;
-       background-size: cover;
-       margin: 6px 10px auto 161px;
+    /*Start of dynamic_numbers */
+    .dynamic_numbers {
+      position: relative;
+      background-color: #444;
+      // width: 10%;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: url(/assets/images/svg/circle.svg);
+      background-size: 100% 100%;
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center center;
+      object-fit: cover;
+      background-size: cover;
+      margin: 6px 10px auto 161px;
 
-       h3 {
-         line-height: 50px;
-         text-align: center;
-         font-size: 25px;
-         font-weight: bold;
-         color: #fff;
-       }
+      h3 {
+        line-height: 50px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        color: #fff;
+      }
 
-     }
+    }
 
-     /*End of dynamic_numbers */
-
-
-     /*Start of of image style */
-     .alexa-img {
-       position: relative;
-
-       img {
-         width: 180px;
-         height: 180px;
-         display: block;
-         margin-left: -70px;
-       }
-     }
-
-     /*End of of image style */
-
-     /*Start of authors-container style*/
-     .authors-container {
-       position: relative;
-
-       h3 {
-         font-family: SpaceMono-Bold;
-       }
-
-       p {
-         position: relative;
-         color: $main_purple_color;
-         font-size: 14px;
-
-         span,
-         span {
-           font-weight: normal;
-           font-family: SpaceMono-Regular;
-
-         }
-       }
-
-       p.episode {
-         color: #000;
-         font-family: 'Courier New', Courier, monospace;
-       }
-
-       /*End of authors-container style*/
-     }
-
-     /*Start of right_container_text style*/
-     .right_container_text {
-       position: relative;
-
-       p {
-         font-family: SpaceMono-Regular;
-       }
-     }
-
-     /*End of right_container_text style*/
-
-   }
-
-   //End of postcast_main_container >container div
-
- }
-
- @media(max-width:678px) {
-   .postcast_main_container {
-     position: relative;
-
-     .container {
-       position: relative;
-
-       .dynamic_numbers {
-         margin: 0px 10px -25px 0px;
-         z-index: 22;
-       }
-
-       /*Start of .alexa-img */
-       .col-md-3 {
-         position: relative;
-
-         .alexa-img {
-           position: relative;
-           display: block;
-
-           img {
-             width: 150px;
-             height: 120px;
-             float: left;
-           }
-         }
-       }
-
-       /*Start of authors-container */
-       .authors-container {
-         display: block;
-         //  float: left;
-         position: absolute;
-         top: 5;
-         left: 40;
-         right: 20;
-         bottom: 0;
-         margin: 0px 100px;
-
-         h3 {
-           font-size: 22px;
-           font-weight: bold;
-           text-align: center;
-         }
-
-         p {
-           color: #000 !important;
-           font-weight: normal;
-           font-family: 'Courier New', Courier, monospace;
-         }
-
-         .author_images {
-           position: relative;
-           margin: 20px -61px;
-
-           img {
-             display: inline-block;
-
-           }
-         }
-
-       }
+    /*End of dynamic_numbers */
 
 
-     }
-   }
- }
+    /*Start of of image style */
+    .alexa-img {
+      position: relative;
+
+      img {
+        width: 180px;
+        height: 180px;
+        display: block;
+        margin-left: -70px;
+      }
+    }
+
+    /*End of of image style */
+
+    /*Start of authors-container style*/
+    .authors-container {
+      position: relative;
+
+      h3 {
+        font-family: SpaceMono-Bold;
+      }
+
+      p {
+        position: relative;
+        color: $main_purple_color;
+        font-size: 14px;
+
+        span,
+        span {
+          font-weight: normal;
+          font-family: SpaceMono-Regular;
+
+        }
+      }
+
+      p.episode {
+        color: #000;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      /*End of authors-container style*/
+    }
+
+    /*Start of right_container_text style*/
+    .right_container_text {
+      position: relative;
+
+      p {
+        font-family: SpaceMono-Regular;
+      }
+    }
+
+    /*End of right_container_text style*/
+
+  }
+
+  //End of postcast_main_container >container div
+
+}
+
+@media(max-width:678px) {
+  .postcast_main_container {
+    position: relative;
+
+    .container {
+      position: relative;
+
+      .dynamic_numbers {
+        margin: 0px 10px -25px 0px;
+        z-index: 22;
+      }
+
+      /*Start of .alexa-img */
+      .col-md-3 {
+        position: relative;
+
+        .alexa-img {
+          position: relative;
+          display: block;
+
+          img {
+            width: 150px;
+            height: 120px;
+            float: left;
+          }
+        }
+      }
+
+      /*Start of authors-container */
+      .authors-container {
+        display: block;
+        //  float: left;
+        position: absolute;
+        top: 5;
+        left: 40;
+        right: 20;
+        bottom: 0;
+        margin: 0px 100px;
+
+        h3 {
+          font-size: 22px;
+          font-weight: bold;
+          text-align: center;
+        }
+
+        p {
+          color: #000 !important;
+          font-weight: normal;
+          font-family: 'Courier New', Courier, monospace;
+        }
+
+        .author_images {
+          position: relative;
+          margin: 20px -61px;
+
+          img {
+            display: inline-block;
+
+          }
+        }
+
+      }
+
+
+    }
+  }
+}
