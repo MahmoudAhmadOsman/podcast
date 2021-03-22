@@ -1,5 +1,4 @@
 <app-header></app-header>
-
 <main class="postcast_main_container">
   <!-- <div *ngFor="let podcast of podcasts "> -->
   <!-- <div *ngFor="let podcast of podcasts_data; let i = index">
@@ -14,19 +13,14 @@
       extra {{exa.twitter_handle}}
     </div>
   </div> -->
-
   <!-- Start of container -->
   <div class="container">
-    <div
-      class="row row_mb"
-      *ngFor="let podcast of podcasts_data; let i = index"
-    >
+    <div class="row row_mb" *ngFor="let podcast of podcasts_data; let i = index">
       <div class="col-md-3">
         <div class="dynamic_numbers">
           <h3>{{i+1}}</h3>
         </div>
       </div>
-
       <div class="col-md-3 shared_bg">
         <div class="alexa-img">
           <img src="{{podcast.thumbnail}}" alt="{{podcast.title}}" />
@@ -36,13 +30,11 @@
         <div class="authors-container">
           <h3>{{podcast.title}}</h3>
           <p>by <span>{{podcast.publisher}}</span></p>
-          <p>{{podcast.total_episodes}} &nbsp;episodes</p>
-
+          <p class="episode">{{podcast.total_episodes}} &nbsp;episodes</p>
           <hr />
           <div class="author_images">
             <img src="assets/images/svg/apple.svg" alt="{{podcast.title}}" />
             <small class="text-muted"> TUNES</small> &nbsp;
-
             <img src="assets/images/svg/link.svg" alt="{{podcast.title}}" />
             <small class="text-muted"> WEB</small> &nbsp;
             <img src="assets/images/svg/rss.svg" alt="{{podcast.title}}" />
