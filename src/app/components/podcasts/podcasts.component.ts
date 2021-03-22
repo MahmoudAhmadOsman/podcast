@@ -9,12 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PodcastsComponent implements OnInit {
  
+  public errorMessage: String = "An error occurred while making an api call";
   public podcasts_data: any;
   podcast_id: number;
   podcast_name: string;
   pod_parent_id: number;
 
   constructor(private podCast: PodcastService) {
+
     podCast.getPodCastList().subscribe(
       (res) => {
         console.log(res);
@@ -24,7 +26,9 @@ export class PodcastsComponent implements OnInit {
         this.podcasts_data =  res.podcasts;
       },
       (err) => {
-        console.log("oops, error has occured: ", err);
+        console.log("Oops, an error has occured: ", err);
+        this.errorMessage = err;
+
       }
     )
    }
