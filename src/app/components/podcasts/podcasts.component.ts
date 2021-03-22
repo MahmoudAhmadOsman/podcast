@@ -13,6 +13,7 @@ export class PodcastsComponent implements OnInit {
   podcast_id: number;
   podcast_name: string;
   pod_parent_id: number;
+
   constructor(private podCast: PodcastService) {
     podCast.getPodCastList().subscribe(
       (res) => {
@@ -29,7 +30,7 @@ export class PodcastsComponent implements OnInit {
    }
  
   ngOnInit(): void {
-   console.log("DATA", this.data)
+ 
   }
 
 }
