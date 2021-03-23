@@ -42,20 +42,21 @@
             <hr />
             <div class="author_images">
               <img src="assets/images/svg/apple.svg" alt="{{podcast.title}}" />
-              <small class="text-muted"> TUNES</small> &nbsp;
+              <small class="text-muted"> itunes</small>
               <img src="assets/images/svg/link.svg" alt="{{podcast.title}}" />
-              <small class="text-muted"> WEB</small> &nbsp;
+              <small class="text-muted"> web</small>
               <img src="assets/images/svg/rss.svg" alt="{{podcast.title}}" />
-              <small class="text-muted"> RSS</small>
+              <small class="text-muted"> rss</small>
             </div>
           </div>
         </div>
         <div class="col-md-3 shared_bg">
           <div class="right_container_text">
-            <p>
+            <p>{{podcast.description}}</p>
+            <!-- <p>
               {{(podcast.description.length > 5) ? (podcast.description |
               slice:0:200)+'...':(podcast.description)}}
-            </p>
+            </p> -->
           </div>
         </div>
       </div>
