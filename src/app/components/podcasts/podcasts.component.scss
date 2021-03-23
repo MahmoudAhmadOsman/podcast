@@ -142,8 +142,15 @@
       position: relative;
 
       .dynamic_numbers {
+        width: 70px;
+        height: 70px;
         margin: 0px 10px -25px 0px;
         z-index: 22;
+
+        h3 {
+          line-height: 70px;
+          font-size: 50px;
+        }
       }
 
       /*Start of .alexa-img */
@@ -155,9 +162,10 @@
           display: block;
 
           img {
-            width: 150px;
-            height: 120px;
-            float: left;
+            width: 130px;
+            height: 100px;
+
+
           }
         }
       }
@@ -171,12 +179,14 @@
         left: 40;
         right: 20;
         bottom: 0;
-        margin: 0px 100px;
+
+        margin: 0px 0px 71px 118px;
 
         h3 {
-          font-size: 22px;
+
+          font-size: 12px;
           font-weight: bold;
-          text-align: center;
+
         }
 
         p {
@@ -199,5 +209,18 @@
 
 
     }
+
+    /*right_container_text*/
+    .right_container_text {
+      display: block;
+      margin-top: -93px;
+
+    }
+
+
+
+
+
+
   }
 }
