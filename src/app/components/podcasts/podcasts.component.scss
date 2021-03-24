@@ -2,8 +2,11 @@
 
 .postcast_main_container {
   position: relative;
-  margin-top: 40px;
+  // margin-top: 40px;
   display: block;
+  width: 1264px;
+  margin: 20px 100px;
+  height: auto;
 
 
   .shared_bg {
@@ -137,10 +140,17 @@
 @media(max-width:678px) {
   .postcast_main_container {
     position: relative;
+    width: 100% !important;
+    height: auto;
+    display: block;
+    margin: auto !important;
+
 
     .shared_bg {
+      width: 100%;
+      height: auto;
       background-color: #fff;
-      margin: auto 10px;
+      margin: auto 0px;
     }
 
     .container {
