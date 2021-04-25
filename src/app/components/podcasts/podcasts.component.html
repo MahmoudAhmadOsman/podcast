@@ -1,23 +1,10 @@
 <app-header></app-header>
 <main class="postcast_main_container">
-  <!-- <div *ngFor="let podcast of podcasts "> -->
-  <!-- <div *ngFor="let podcast of podcasts_data; let i = index">
-    <div *ngFor="let items of podcast.value | keyvalue">
-      <div *ngFor="let x of items.value | keyvalue">
-        Item: {{x.value.title}}
-      </div>
-    </div>
-    Item: {{podcast.is_claimed}}
-
-    <div *ngFor="let exa of [podcast.extra]; let x = index">
-      extra {{exa.twitter_handle}}
-    </div>
-  </div> -->
   <!-- Start of container -->
-  <div class="container" *ngFor="let podcast of podcasts_data; let i = index">
+  <div class="container" *ngFor="let podcast of listOfPodcast; let i = index">
     <div
       class="showError"
-      *ngIf="podcasts_data.length > 0; else noPodcastData "
+      *ngIf="listOfPodcast.length > 0; else noPodcastData "
     >
       <div class="row row_mb">
         <div class="col-md-3">
