@@ -19,7 +19,7 @@ export class PodcastsComponent implements OnInit {
   public listOfPodcast = [];
 
 //Show loading
-  loading = true;
+  public loading = true;
   constructor(private podCast: PodcastService) {
 
     podCast.getPodCastList().subscribe(
