@@ -18,6 +18,8 @@ export class PodcastsComponent implements OnInit {
 
   public listOfPodcast = [];
 
+//Show loading
+  loading = true;
   constructor(private podCast: PodcastService) {
 
     podCast.getPodCastList().subscribe(
@@ -26,7 +28,11 @@ export class PodcastsComponent implements OnInit {
         // this.podcast_id = res.id
         // this.podcast_name = res.name
         // this.pod_parent_id = res.parent_id
-        this.listOfPodcast =  res.podcasts;
+        this.listOfPodcast = res.podcasts;
+
+
+        //Set loading to false after data is fetched
+        this.loading = false;
       },
       (err) => {
         console.log("An error has occured: ", err);
