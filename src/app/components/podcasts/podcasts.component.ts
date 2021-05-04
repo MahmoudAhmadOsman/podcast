@@ -12,9 +12,9 @@ export class PodcastsComponent implements OnInit {
   
   public errorMessage: String = "An error occurred while making an api call";
  
-    public podcast_id: number;
-    public  podcast_name: string;
-    public pod_parent_id: number;
+//     public podcast_id: number;
+//     public  podcast_name: string;
+//     public pod_parent_id: number;
 
   public listOfPodcast = [];
 
