@@ -11,10 +11,7 @@ export class PodcastsComponent implements OnInit {
  
   
   public errorMessage: String = "An error occurred while making an api call";
- 
-//     public podcast_id: number;
-//     public  podcast_name: string;
-//     public pod_parent_id: number;
+
 
   public listOfPodcast = [];
 
@@ -27,10 +24,7 @@ export class PodcastsComponent implements OnInit {
       (res) => {
         console.log("List of Podcast data ", res);
         
-        // this.podcast_id = res.id;
-        // this.podcast_name = res.name;
-        // this.pod_parent_id = res.parent_id;
-        
+     
         this.listOfPodcast = res.podcasts;
 
 
